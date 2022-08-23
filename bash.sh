@@ -2,5 +2,5 @@
 
 
 whoami
-cat /etc/passwd/ | awk -f : '{print $1}' | tail -10 > listoftenusers
+cat /etc/passwd | awk -F : '{print $1}' | tail -10 > listoflasttenusers
 echo succeffully completed
